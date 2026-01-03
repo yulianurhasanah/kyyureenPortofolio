@@ -1,0 +1,70 @@
+/* BODY */
+body{
+  padding-top:80px;
+}
+
+/* PAGE SWITCH */
+.page{
+  display:none;
+  animation: fade 0.4s ease;
+}
+
+.page.active{
+  display:block;
+}
+
+@keyframes fade{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+/* PROFILE */
+.profile-img{
+  width:180px;
+  height:180px;
+  object-fit:cover;
+  border-radius:50%;
+  border:4px solid #e1e110;
+}
+
+/* CONTACT */
+.contact-form{
+  max-width:500px;
+}
+
+/* CARD */
+.card{
+  border-radius:15px;
+}
+
+/* GALLERY MEDIA (PHOTO & VIDEO) */
+.media-box{
+  width:100%;
+  aspect-ratio:1 / 1; /* kotak */
+  overflow:hidden;
+  border-radius:12px;
+  background:#000;
+}
+
+.media-box img,
+.media-box video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* efek live video */
+.media-box video{
+  filter:brightness(1.05);
+}
+
+/* hover efek (opsional tapi keren) */
+.media-box img,
+.media-box video{
+  transition:transform 0.4s ease;
+}
+
+.media-box:hover img,
+.media-box:hover video{
+  transform:scale(1.08);
+}
